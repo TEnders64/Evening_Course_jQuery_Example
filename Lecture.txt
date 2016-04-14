@@ -42,6 +42,8 @@ Git & Terminal
     ls, mkdir, pwd, cd ...
 
 What's Git?
+  Does everyone have their GitHub account ready and Git installed?
+
   Git is great for version control.  You can track how files change over time and who's committing those changes.
   Imagine working on a team of developers and two people are in charge of one feature while two others are in charge of another.
   Things can get hectic if both teams are using the same code.  What happens when they want to merge their features?
@@ -54,15 +56,32 @@ What's Git?
     git add .                 -Adds all files in your git repo to a staging area
     git commit -m "comment"   -Commits or saves the staged files. -m and the comment are for attaching a message
 
-  Let's clone someone else's work! Another great feature of git and GitHub is code sharing!
-    git clone 
-
   Creating repositories allows you to house your code neatly and Git repo's keep an eye on things for you.
-  Some comm
+  - Let's set up a git repo
+    1. Navigate to your Desktop via Terminal/Command Prompt
+    2. Create a new folder called evening_course
+    3. Navigate into this evening_course folder
+    4. Initialize a git repo
+    5. Drag the evening_course folder to Sublime or Atom.
+    6. Create a new file in evening_course called index.html.  Have it say Hello World in an <h1> tag.
+    7. Save your index.html file and then jump back to Terminal and stage your changes
+    8. Commit your changes with a comment.
+
+  - Let's set up a remote repo.
+    1. Go to GitHub.com and create a New Repository.  Name it appropriately.
+    2. Follow the instructions for setting up a remote origin and pushing your local changes to this
+       new repo at Github.com.  The commands will be executed in your terminal in the directory where you created the local
+       repo with index.html.
+    3. Congrats, you've created a repo locally, a repo externally, and pushed the code from your local machine to your external repo
+
+  - Let's clone someone else's work! Another great feature of git and GitHub is code sharing!
+    1. create a folder called evening_course_cloning on your Desktop
+    2. Navigate to the evening_course_cloning folder
+    3. git clone https://github.com/TEnders64/Evening_Course_jQuery_Example.git
+    The URL is the latest version of THIS MATERIAL!
+    4. Congrats! You've just copied down the code from a repo!
 
   One thing to always know: Git is local - GitHub is external.
    - You create git repos locally, but then push them to hosted repos at GitHub.com for sharing
-
-
 
 What to look forward to: Demo on Pacman Monday!!!
