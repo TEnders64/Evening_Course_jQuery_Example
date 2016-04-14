@@ -1,0 +1,99 @@
+****Javascript Objects are Associative Arrays****
+
+Javascript Objects and Associative Arrays are synonymous.
+How do they relate to a normal array we've already been taught?
+Well, the array denoted by [] is also referred to as an INDEXED array.
+What we mean by 'indexed' is that indexes or bucket positions get tied to the values in the array.
+
+var arr = ["You","Me",8] has indexes of 0, 1, and 2 and we access the values by referencing the corresponding index.
+Like this: arr[0];
+arr[0] would grab us the string "You".
+
+But do we want to always have to memorize the positions or indexes where we placed some information?  I sure don't.
+
+Javascript Objects and Associative Arrays make it a lot easier for us to store information like an array, but give us
+a better sense of WHERE to look for values inside of it.  Here's an example:
+
+var obj = {name: "Felix", number: 34};
+
+Note the syntax for an object. {}  Similar to the beginning of a function body or if statement's body.
+Everything related to the variable obj is within these braces.  Inside of the object with have a few things.
+1) Keys - name and number are both keys.
+2) Values - "Felix" and 34 are values.
+3) Key-Value pairs are separated by commas.
+
+To access a value from an object or associative array, we call upon the name of the object or assoc array and then have two options.
+1) We can access using bracket notation like an indexed array, but instead of numbers, we access KEYS.
+  Example: obj["name"]  <= NOTE: The KEY must be in quotes!
+2) We can access using dot notation, like we do console.log()  The .log() is a form of dot notation.
+  Example: Somewhere in Chrome, a console object exists and we are accessing its log KEY.  But look, the log key's VALUE is a function!
+           var console = {
+                  log: function(){
+
+                  }
+           };
+           So we can access the log KEY using the dot notation, but we'll be returned the ENTIRE function.
+           So if you store a function inside of an object, you can access the KEY of the function and INVOKE from the KEY
+              Example: console.log()
+
+Think of Objects and Associative Arrays as a way to keep track of some information that is related to one another, like a
+book or movie:
+  var book = {
+      title: ...,
+      author: ...
+  }
+
+  var movie = {
+      title: ...,
+      actors: [],
+      year: ...
+  }
+
+
+  Challenge 1
+
+  Ask a user 2 questions:
+    Favorite color?
+    Favorite movie?
+    Then form an object with the keys color and movie and their corresponding values
+      being the answers to the questions.
+    Create another key inside of your object called printValues and have its value be a function.
+      I want this function to console log the values for the color key and the movie key.
+
+Multi-Dimensional Arrays
+
+  Web developers encounter multi-dimensional arrays when they are trying to display tables or emulate a game world (*wink wink*)
+
+  What's a multi-dimensional array look like?
+
+  Example:
+    var arr = [ [0,1,2,3], [0,1,2,4], [0,5] ];
+
+  How do we unwrap and access the arrays within the array?
+  How have we been accessing arrays this whole time?  What tool?  FOR LOOPS
+  A for loop can get us from bucket to bucket within an array.  So think of this as
+  one BIG array that holds individual arrays inside of its buckets.
+  So to access the big array, we'd write...
+
+  for (var outer_array_index = 0; outer_array_index < arr.length; outer_array_index++){
+        // we are now inside the big array.  let's get into one of the inner arrays.
+        for (var inner_array_index = 0; inner_array_index < arr[outer_array_index]; inner_array_index++){
+            // we are now inside the inner arrays depending on what outer_array_index is!
+        }
+  }
+
+  Challenge 2
+
+  Given this multi-dimensional array: var arr = [[0,1,2], [2,3,4]];
+    Print every value in each inner array with a twist...
+    Print a message to the console whenever you enter an inner array first, then print each of the values in the array
+    The result in the console should look something like this:
+
+    "Entered a new array"
+    0
+    1
+    2
+    "Entered a new array"
+    2
+    3
+    4

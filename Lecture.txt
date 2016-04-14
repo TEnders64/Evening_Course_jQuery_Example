@@ -1,0 +1,68 @@
+Javascript/jQuery/Git
+
+What cool things can Javascript do for us?  What is it designed to do?
+  - Interaction with the Client
+  - Page manipulation
+  - Logic
+
+Here's an example of what we can do with vanilla Javascript to perform...
+  - DOM Manipulation
+    - What's the DOM? Document Object Model... You know about objects now!!!
+    - Let's console.log() this 'document' object in index.html.
+    - Everything in the document is mentioned and we can access different parts of it.
+
+  Let's use the document.getElementById() function.  Know that there are functions we inherited that we can use
+    to manipulate and grab elements on our document (page).
+
+  It's a good idea to place scripts at the bottom of your page so the document gets loaded by the browser first before
+    running your scripts.  Let's move our script down to the bottom.
+
+  You can capture elements by ID's or classes.  If we do Classes, we get an array of objects back because we can have
+    multiple elements with the same class.  Remember your CSS?
+
+  But all of this was too much for most people to memorize or keep up with, so jQuery saves you a lot of time.
+
+  It's a library built in JavaScript to do the same things you would have had to do with vanilla JavaScript but in less time
+    and it's much easier to read.
+
+For example:
+  document.getElementById("target").style.color = "green";
+              vs.
+  $('#target').css('color','green');
+
+ There are more features than what can be shared in a short lecture.
+  Jump into the platform and start doing the jQuery exercises!!!
+  Don't forget to include jQuery into your document.  Follow the example in index.html to include jQuery.
+
+Git & Terminal
+  The Platform has great explanation on Terminal and Git Commands.
+  Terminal or Command Prompt is a way of navigating your system's file structure without touching a GUI.  Some developers only code inside of
+   a terminal or command prompt.  These are extreme cases though.
+  - Terminal commands
+    ls, mkdir, pwd, cd ...
+
+What's Git?
+  Git is great for version control.  You can track how files change over time and who's committing those changes.
+  Imagine working on a team of developers and two people are in charge of one feature while two others are in charge of another.
+  Things can get hectic if both teams are using the same code.  What happens when they want to merge their features?
+  Git provides a great solution.  You can create/test features on different branches then merge this branch back into what's called
+  a master branch.  Think of the master branch as the completely functional branch that the public sees.
+
+  - Git commands
+    always preface any command with: git
+    git init                  -Initializes a git repo in the current working directory
+    git add .                 -Adds all files in your git repo to a staging area
+    git commit -m "comment"   -Commits or saves the staged files. -m and the comment are for attaching a message
+
+  Let's clone someone else's work! Another great feature of git and GitHub is code sharing!
+    git clone 
+
+  Creating repositories allows you to house your code neatly and Git repo's keep an eye on things for you.
+  Some comm
+
+  One thing to always know: Git is local - GitHub is external.
+   - You create git repos locally, but then push them to hosted repos at GitHub.com for sharing
+
+
+
+What to look forward to: Demo on Pacman Monday!!!
