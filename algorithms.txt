@@ -17,7 +17,7 @@ a better sense of WHERE to look for values inside of it.  Here's an example:
 var obj = {name: "Felix", number: 34};
 
 Note the syntax for an object. {}  Similar to the beginning of a function body or if statement's body.
-Everything related to the variable obj is within these braces.  Inside of the object with have a few things.
+Everything related to the variable obj is within these braces.  Inside of the object we have a few things.
 1) Keys - name and number are both keys.
 2) Values - "Felix" and 34 are values.
 3) Key-Value pairs are separated by commas.
