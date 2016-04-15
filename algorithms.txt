@@ -28,13 +28,13 @@ To access a value from an object or associative array, we call upon the name of 
 2) We can access using dot notation, like we do console.log()  The .log() is a form of dot notation.
   Example: Somewhere in Chrome, a console object exists and we are accessing its log KEY.  But look, the log key's VALUE is a function!
            var console = {
-                  log: function(){
+                  log: function(data){
 
                   }
            };
            So we can access the log KEY using the dot notation, but we'll be returned the ENTIRE function.
            So if you store a function inside of an object, you can access the KEY of the function and INVOKE from the KEY
-              Example: console.log()
+              Example: console.log("HELLO")
 
 Think of Objects and Associative Arrays as a way to keep track of some information that is related to one another, like a
 book or movie:
@@ -51,7 +51,7 @@ book or movie:
 
 
   Challenge 1
-
+var answer = prompt("What's your favorite color?");
   Ask a user 2 questions:
     Favorite color?
     Favorite movie?
@@ -77,7 +77,7 @@ Multi-Dimensional Arrays
 
   for (var outer_array_index = 0; outer_array_index < arr.length; outer_array_index++){
         // we are now inside the big array.  let's get into one of the inner arrays.
-        for (var inner_array_index = 0; inner_array_index < arr[outer_array_index]; inner_array_index++){
+        for (var inner_array_index = 0; inner_array_index < arr[outer_array_index].length; inner_array_index++){
             // we are now inside the inner arrays depending on what outer_array_index is!
         }
   }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>ALgorithms</title>
+	<script>
+	//challenge 1
+		var colorAnswer = prompt("What's your favorite color?");
+		var movieAnswer = prompt("What's your favorite movie?");
+
+		var favoritesObj = {
+			color: colorAnswer,
+			movie: movieAnswer,
+			printValues: function(){
+				console.log(this.color); // the keyword 'this' allows an object to refer to itself
+				console.log(this.movie); 
+			}
+		}
+
+		// favoritesObj.printValues();
+	
+	//challenge 2
+		var arr = [[0,1,2], [2,3,4]];
+
+		for (var outer_index = 0; outer_index < arr.length; outer_index++){
+			console.log("Entered a new array");
+			for (var inner_index = 0; inner_index < arr[outer_index].length; inner_index++){
+				console.log(arr[outer_index][inner_index]);
+			}
+		}
+
+	</script>
+</head>
+<body>
+	
+</body>
+</html>
